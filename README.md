@@ -1,27 +1,62 @@
+# ShopEase ECom Web
 
-## Backend API Endpoints
+ShopEase ECom Web is an e-commerce platform with a React frontend and Node.js/Express backend.
 
-### 1. **Authentication**
+## Project Structure
 
-- **POST /api/auth/register**: Register a new user.
-- **POST /api/auth/login**: Login and get JWT token.
 
-### 2. **Products**
+## Backend Setup
 
-- **GET /api/products**: Get all products.
-- **GET /api/products/:id**: Get a single product.
-- **POST /api/products**: Add a new product (admin-only).
-- **PUT /api/products/:id**: Update product (admin-only).
-- **DELETE /api/products/:id**: Delete product (admin-only).
+1. **Navigate to `backend` folder**:
+    ```bash
+    cd backend
+    ```
 
-### 3. **Orders**
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-- **GET /api/orders**: Get all orders (admin-only).
-- **POST /api/orders**: Create a new order.
-- **GET /api/orders/:id**: Get order details.
+3. **Create `.env` file** with the following content:
+    ```
+    MONGODB_URI=mongodb://127.0.0.1:27017/ecom
+    PORT=5001
+    ```
 
-## Getting Started
+4. **Run the server**:
+    ```bash
+    node server.js
+    ```
 
-### 1. Clone the repository:
-```bash
-git clone https://github.com/nuwanmataraarachchi/ShopEaseEComWeb.git
+    The backend will run on **port 5001** and connect to MongoDB.
+
+## Frontend Setup
+
+1. **Navigate to `frontend` folder**:
+    ```bash
+    cd frontend
+    ```
+
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Run the React app**:
+    ```bash
+    npm start
+    ```
+
+    The frontend will run on **http://localhost:3000**.
+
+## API Endpoints (Backend)
+
+- `GET /api/products` - Get all products.
+- `GET /api/products/:id` - Get product by ID.
+- `POST /api/products` - Add a product (admin-only).
+- `PUT /api/products/:id` - Update a product (admin-only).
+- `DELETE /api/products/:id` - Delete a product (admin-only).
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
