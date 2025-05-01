@@ -5,7 +5,9 @@ ShopEase ECom Web is an e-commerce platform with a React frontend and Node.js/Ex
 ## Project Structure
 
 
-## Backend Setup
+## Setup Instructions
+
+### Backend Setup
 
 1. **Navigate to `backend` folder**:
     ```bash
@@ -30,7 +32,7 @@ ShopEase ECom Web is an e-commerce platform with a React frontend and Node.js/Ex
 
     The backend will run on **port 5001** and connect to MongoDB.
 
-## Frontend Setup
+### Frontend Setup
 
 1. **Navigate to `frontend` folder**:
     ```bash
@@ -49,6 +51,12 @@ ShopEase ECom Web is an e-commerce platform with a React frontend and Node.js/Ex
 
     The frontend will run on **http://localhost:3000**.
 
+## Technologies Used
+
+- **Frontend**: React, React Router DOM, Tailwind CSS, TypewriterEffect
+- **Backend**: Node.js, Express.js, MongoDB
+- **Development Tools**: npm, Git
+
 ## API Endpoints (Backend)
 
 - `GET /api/products` - Get all products.
@@ -56,6 +64,20 @@ ShopEase ECom Web is an e-commerce platform with a React frontend and Node.js/Ex
 - `POST /api/products` - Add a product (admin-only).
 - `PUT /api/products/:id` - Update a product (admin-only).
 - `DELETE /api/products/:id` - Delete a product (admin-only).
+
+## Bonus Features Implemented
+
+- **Static Pages**: 
+  - About Page
+  - Contact Page
+  - Home Page with Hero Section
+
+- **UI Features**:
+  - Sticky Header and Footer
+  - Responsive Grid Layout for Product Display
+  - Product Search Feature
+  - Pagination for Product Pages
+  - Animations and Effects (e.g., Typewriter effect for dynamic text display)
 
 ## License
 
